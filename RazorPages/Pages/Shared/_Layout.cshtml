@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FreakyFashion</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-3">
+            <div class="container">
+
+                <div class="row">
+                    <div class="d-flex align-items-center col-md-6">
+
+                        <div class="logo">
+                            <a asp-page="/Index">
+                                <p>FreakyFashion</p>
+                            </a>
+                        </div>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center mr-auto">
+
+                        <select name="language" id="language">
+                            <option value="svenska">Svenska</option>
+                            <option value="spanska">Spanska</option>
+                            <option value="ryska">Ryska</option>
+                        </select>
+                        <a class="level-one-link" asp-page="/Admin/ListProducts">
+                            <img class="icon" src="https://image.flaticon.com/icons/svg/1556/1556324.svg" alt="">
+                        </a>
+                        <img class="icon" src="https://via.placeholder.com/40x40" alt="">
+                        <img class="icon" src="https://image.flaticon.com/icons/svg/126/126510.svg" alt="">
+
+
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                            <ul class="navbar-nav flex-grow-1">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Category" asp-route-id="1">Skor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Category" asp-route-id="2">Tröja</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Category" asp-route-id="3">Byxor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Category" asp-route-id="4">Vinterjacka</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Category" asp-route-id="5">Kappor</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="dropdown-divider col-12"></div>
+            <div>
+                <span>
+                    Shopping
+                </span>
+
+                <ul>
+                    <li >
+                        <a  asp-page="/Category" asp-route-id="1">Skor</a>
+                    </li>
+                    <li >
+                        <a  asp-page="/Category" asp-route-id="2">Tröja</a>
+                    </li>
+                    <li >
+                        <a  asp-page="/Category" asp-route-id="3">Byxor</a>
+                    </li>
+                    <li >
+                        <a  asp-page="/Category" asp-route-id="4">Vinterjacka</a>
+                    </li>
+                    <li >
+                        <a  asp-page="/Category" asp-route-id="5">Kappor</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    Mina Sidor
+                </span>
+
+                <ul>
+                    <li><a href="#1">Mina Ordrar</a></li>
+                    <li><a href="#2">Mitt Konto</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <span>
+                    Kundtjänst
+                </span>
+
+                <ul>
+                    <li><a href="#1">Returpolicy</a></li>
+                    <li><a href="#2">Integritetspolicy</a></li>
+
+                </ul>
+            </div>
+
+            <div class="language-region">
+                <span>
+                    Välj land och språk
+                </span>
+                <label for="country">
+                    Land
+                    <select name="country" id="country">
+                        <option value="svenska">Sverige</option>
+                        <option value="spanska">Spanien</option>
+                        <option value="ryska">Ryssland</option>
+                    </select>
+                </label>
+
+                <label for="language">
+                    Språk
+                    <select name="language" id="language">
+                        <option value="svenska">Svenska</option>
+                        <option value="spanska">Spanska</option>
+                        <option value="ryska">Ryska</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>

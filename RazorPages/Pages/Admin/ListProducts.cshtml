@@ -1,0 +1,57 @@
+﻿@page 
+@model FreakyFashion.RazorPages.Pages.Admin.ListProductsModel
+
+
+    <a asp-page="/Admin/AddProduct">Add Product</a>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+           Name
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+           Price
+        </th>
+        <th>
+            Image Url
+        </th>
+        <th>
+            Category
+        </th>
+        <th>
+           Climate Compensated
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Clothing) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+                
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClimateCompensated)
+            </td>
+       
+        </tr>
+    }
+    </tbody>
+</table>

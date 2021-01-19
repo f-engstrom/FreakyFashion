@@ -1,0 +1,28 @@
+﻿@model FreakyFashion.MWC.Models.ViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+    <img src="@Html.DisplayFor(model => model.ClothingItem.ImageUrl)" />
+    <div>
+        <h2>@Html.DisplayFor(model => model.ClothingItem.Name)</h2>
+        <p> @Html.DisplayFor(model => model.ClothingItem.Description)</p>
+        <p>  @Html.DisplayFor(model => model.ClothingItem.Price) SEK</p>
+        <p>
+            @Html.DisplayNameFor(model => model.ClothingItem.ClimateCompensated)
+            @Html.DisplayFor(model => model.ClothingItem.ClimateCompensated)
+        </p>
+
+    </div>
+
+
+
+<div class="container pt-3">
+
+    <partial name="_RecommendedProducts" model="Model.Clothing" />
+
+</div>
+

@@ -1,0 +1,50 @@
+﻿@page
+
+@model FreakyFashion.RazorPages.Pages.Admin.AddProductModel
+
+
+
+
+<h1>Create</h1>
+
+<h4>Clothing</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Clothing.Name" class="control-label"></label>
+                <input asp-for="Clothing.Name" class="form-control" />
+                <span asp-validation-for="Clothing.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clothing.Description" class="control-label"></label>
+                <input asp-for="Clothing.Description" class="form-control" />
+                <span asp-validation-for="Clothing.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clothing.Price" class="control-label"></label>
+                <input asp-for="Clothing.Price" class="form-control" />
+                <span asp-validation-for="Clothing.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clothing.ImageUrl" class="control-label"></label>
+                <input asp-for="Clothing.ImageUrl" class="form-control" />
+                <span asp-validation-for="Clothing.ImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Category</label>
+                <select name="Clothing.CategoryId" asp-items="Model.Categories" asp-for="Clothing.CategoryId"></select>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Clothing.ClimateCompensated" /> @Html.DisplayNameFor(model => model.Clothing.ClimateCompensated)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

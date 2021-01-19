@@ -1,0 +1,18 @@
+﻿@model List<Clothing>
+
+<div class="card-deck">
+    @foreach (var item in Model)
+    {
+
+        <div class="card">
+            <a asp-controller="Clothings" asp-action="Details" asp-route-id="@item.Id">
+                <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.ImageUrl)" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Name)</h5>
+                    <p>@Html.DisplayFor(modelItem => item.Price)</p>
+                </div>
+            </a>
+        </div>
+
+    }
+</div>

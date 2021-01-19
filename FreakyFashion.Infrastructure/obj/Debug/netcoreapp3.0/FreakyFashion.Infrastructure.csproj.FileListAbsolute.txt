@@ -1,0 +1,8 @@
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\bin\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.deps.json
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\bin\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.dll
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\bin\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.pdb
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\obj\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\obj\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\obj\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.AssemblyInfo.cs
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\obj\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.dll
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\FreakyFashion.Infrastructure\obj\Debug\netcoreapp3.0\FreakyFashion.Infrastructure.pdb

@@ -1,0 +1,368 @@
+﻿
+html,
+body {
+    background: rgba(165, 249, 0, 0.42);
+}
+
+a, h1, h2, h3, p, span {
+    font-family: 'Ibarra Real Nova', serif;
+    color: rgb(204, 3, 204);
+}
+/*=================================================================================*/
+
+/*Body*/
+/*=================================================================================*/
+
+
+
+body a {
+    text-decoration: none;
+}
+/*=================================================================================*/
+/*header*/
+/*=================================================================================*/
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+    background: repeating-linear-gradient( 180deg, greenyellow 0px, chartreuse 40px,greenyellow 40px, chartreuse 80px);
+}
+
+
+
+
+.logo {
+    background: repeating-linear-gradient( 45deg, purple 0px, chartreuse 40px,purple 40px, chartreuse 80px);
+    display: flex;
+    margin: 20px 0px 20px 20px;
+}
+
+    .logo p {
+        display: flex;
+        justify-content: center;
+        color: rgb(204, 3, 204);
+        font-size: 2em;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+
+.site-header div {
+    display: flex;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+    .site-header div:nth-child(2) {
+        margin: auto 0;
+        border-right: white;
+        display: flex;
+    }
+
+        .site-header div:nth-child(2) img {
+            height: 1em;
+            width: 15px;
+            background: white;
+            border: white solid 1px;
+            align-self: center;
+            border-radius: 30px;
+        }
+
+    .site-header div:nth-child(3) {
+        margin: 0 0 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 20em;
+    }
+
+/*-----------------------------------------------------------------------*/
+/*Site header nav*/
+/*-----------------------------------------------------------------------*/
+.site-header nav {
+    flex-direction: row;
+    display: flex;
+    flex: auto;
+    align-content: stretch;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.header-row ul {
+    margin: 0 0 0 10em;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+
+.site-header nav li {
+    padding: 0.5em;
+}
+
+.level-one-link:hover {
+    background-color: #60f900;
+    font-weight: bold;
+}
+
+.site-header nav a {
+    padding: 0.3em;
+}
+
+.site-header nav .dropdown {
+    visibility: hidden;
+    background: repeating-linear-gradient( 180deg, greenyellow 0px, chartreuse 40px,greenyellow 40px, chartreuse 80px);
+    opacity: 0;
+    position: absolute;
+    margin: 0.5em 0 0 0.1em;
+    display: none;
+}
+
+.dropdown a:hover {
+    font-weight: bold;
+}
+
+/*li {
+       display: block;
+       float: left;
+       padding: 1rem;
+       position: relative;
+       text-decoration: none;
+       transition-duration: 0.5s;
+   }*/
+
+nav li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+
+/*=================================================================================*/
+/*Main*/
+/*=================================================================================*/
+
+.main-footer {
+    flex: 1;
+    overflow: auto;
+}
+
+section {
+    height: 100vh;
+    overflow: auto;
+}
+
+.mycarouselimage {
+    width: auto;
+    height: 225px;
+    max-height: 225px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 2rem;
+    width: 2rem;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    background-image: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3rem;
+    margin: 2rem;
+}
+
+.hero {
+    display: flex;
+    padding: 1em;
+}
+
+    .hero div {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0;
+    }
+
+    .hero img {
+        flex: 2 0 0;
+    }
+
+    .hero button {
+        margin: 0 auto;
+    }
+
+.featured-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+    .featured-items div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+.third-row-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons {
+    margin-top: 2em;
+    display: flex;
+    margin-left: 6em;
+}
+
+    .icons img {
+        align-self: center;
+    }
+
+    .icons span {
+        margin: auto;
+        margin-left: 1em;
+    }
+
+.admin-page {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+    .admin-page p {
+        display: block;
+    }
+
+.admin-page-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-page-controls {
+    display: flex;
+    flex-direction: row;
+    padding: 0.2em;
+}
+
+.admin-page-image {
+    height: 100px;
+    width: 100px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+    .categories div {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .categories div a {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+
+            .categories div a p {
+                align-self: center;
+            }
+
+    .categories img {
+        height: 400px;
+        width: 300px;
+    }
+
+    .categories h3 {
+        font-weight: bold;
+        align-self: center;
+    }
+
+
+.clothing-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10em;
+}
+
+    .clothing-details img {
+        margin-left: 10em;
+        height: 300px;
+        width: 400px;
+    }
+
+    .clothing-details div {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-right: 10em;
+    }
+
+        .clothing-details div h2 {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline black;
+        }
+
+
+.vadfanärdetsomheänder {
+}
+
+/*=================================================================================*/
+/*Footer*/
+/*=================================================================================*/
+footer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2em 10em 0 10em;
+}
+
+.dropdown-divider {
+    border-top: 5px solid rgb(204, 3, 204);
+}
+
+footer div {
+    padding: 1em;
+}
+
+footer .language-region {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+footer div > span {
+    font-weight: bold;
+}
+
+footer span {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}

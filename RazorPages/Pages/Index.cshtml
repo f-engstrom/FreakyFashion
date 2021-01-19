@@ -1,0 +1,59 @@
+﻿@page
+@model FreakyFashion.RazorPages.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        @{
+            var first = true;
+        }
+        @foreach (var product in Model.Clothings.Take(3))
+        {
+            <div class="carousel-item @(first ? Html.Raw("active") : Html.Raw(""))">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-5">
+                            <h1>@product.Name</h1>
+                            <p>@product.Description</p>
+                            <a asp-page="/ProductDetails" asp-route-id="@product.Id">Köp nu</a>
+                        </div>
+                        <div class="col-5">
+                            <img class="mycarouselimage" src="@product.ImageUrl" alt="@product.Name"/>
+                        </div>
+                        <div class="col-1"></div>
+
+                    </div>
+                </div>
+            </div>
+            first = false;
+        }
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="container pt-3">
+
+    <partial name="_Categories" model="Model.Categories" />
+</div>
+<div class="container pt-3">
+
+    <partial name="Shared/_PopularProducts" model="Model.Clothings" />
+</div>
+
+

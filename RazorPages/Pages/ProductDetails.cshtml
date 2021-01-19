@@ -1,0 +1,24 @@
+﻿@page "{id}"
+@model FreakyFashion.RazorPages.Pages.ProductsModel
+
+
+
+
+<img src="@Html.DisplayFor(model => model.Clothing.ImageUrl)" />
+<div>
+    <h2>@Html.DisplayFor(model => model.Clothing.Name)</h2>
+    <p> @Html.DisplayFor(model => model.Clothing.Description)</p>
+    <p>  @Html.DisplayFor(model => model.Clothing.Price) SEK</p>
+    <p>
+        @Html.DisplayNameFor(model => model.Clothing.ClimateCompensated)
+        @Html.DisplayFor(model => model.Clothing.ClimateCompensated)
+    </p>
+
+</div>
+
+<div class="container pt-3">
+
+<partial name="Shared/_RecommendedProducts" model="Model.Clothings" />
+
+</div>
+

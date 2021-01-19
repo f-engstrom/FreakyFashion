@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreakyFashion.RazorPages", "RazorPages\FreakyFashion.RazorPages.csproj", "{27FEC004-27A0-4600-9D65-99A2B5F1F138}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreakyFashion.MWC", "MVC\FreakyFashion.MWC.csproj", "{DB1488E8-1D53-40A7-924A-C9151226877B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27FEC004-27A0-4600-9D65-99A2B5F1F138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FEC004-27A0-4600-9D65-99A2B5F1F138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FEC004-27A0-4600-9D65-99A2B5F1F138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FEC004-27A0-4600-9D65-99A2B5F1F138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1488E8-1D53-40A7-924A-C9151226877B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1488E8-1D53-40A7-924A-C9151226877B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1488E8-1D53-40A7-924A-C9151226877B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1488E8-1D53-40A7-924A-C9151226877B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FE4AA3C-3C5D-4FAA-A3B5-76BC1867BF59}
+	EndGlobalSection
+EndGlobal

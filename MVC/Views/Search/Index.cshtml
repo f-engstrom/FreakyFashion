@@ -1,0 +1,25 @@
+﻿@model IEnumerable<FreakyFashion.Models.Clothing>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<section class="categories">
+
+
+    @foreach (var item in Model)
+    {
+
+        <div>
+            <a asp-controller="Clothings" asp-action="Details" asp-route-id="@item.Id">
+                <img src="@Html.DisplayFor(modelItem => item.ImageUrl)" />
+
+                <p> @Html.DisplayFor(modelItem => item.Name)</p>
+                <p> @Html.DisplayFor(modelItem => item.Price) SEK</p>
+            </a>
+        </div>
+    }
+
+
+</section>

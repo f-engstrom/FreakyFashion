@@ -1,0 +1,8 @@
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\bin\Debug\netcoreapp3.0\FreakyFashion.Core.deps.json
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\bin\Debug\netcoreapp3.0\FreakyFashion.Core.dll
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\bin\Debug\netcoreapp3.0\FreakyFashion.Core.pdb
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\obj\Debug\netcoreapp3.0\FreakyFashion.Core.csprojAssemblyReference.cache
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\obj\Debug\netcoreapp3.0\FreakyFashion.Core.AssemblyInfoInputs.cache
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\obj\Debug\netcoreapp3.0\FreakyFashion.Core.AssemblyInfo.cs
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\obj\Debug\netcoreapp3.0\FreakyFashion.Core.dll
+C:\Users\Frans\Dropbox\Projects\ASP .Net Core\FreakyFashion\Core\obj\Debug\netcoreapp3.0\FreakyFashion.Core.pdb
